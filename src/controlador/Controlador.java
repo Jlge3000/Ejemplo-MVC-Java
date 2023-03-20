@@ -1,6 +1,7 @@
 package controlador;
 
 import modelo.Cliente;
+import modelo.Datos;
 import modelo.ListaCliente;
 
 import java.util.ArrayList;
@@ -12,6 +13,8 @@ public class Controlador {
     public Cliente cliente = new Cliente();
 
     public ListaCliente lista = new ListaCliente();
+
+    public Datos datos;
 
     public Controlador() {
     }
@@ -27,6 +30,7 @@ public class Controlador {
         e.nextLine();
         cliente = new Cliente(nombre, apellidos, edad);
         lista.addCliente(cliente);
+
     }
     public void mostrarClientes(){
         int i = 0;
